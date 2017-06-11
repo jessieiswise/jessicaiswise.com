@@ -6,11 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-  @Input() topics: any;
   constructor() { }
 
   ngOnInit() {
-    console.log(this.topics)
   }
 
 }

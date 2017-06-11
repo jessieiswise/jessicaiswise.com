@@ -1,0 +1,18 @@
+.resumeiframe {
+position: relative;
+padding-bottom: 82rem;
+padding-top: 30px;
+height: 0;
+overflow: auto; 
+-webkit-overflow-scrolling:touch; 
+border: solid black 1px;
+} 
+.resumeiframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.pb80 { padding-bottom: 82rem; }

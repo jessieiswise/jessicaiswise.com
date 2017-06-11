@@ -7,9 +7,13 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 const appRoutes: Routes = [
- {path: "", component: HomeComponent}
+  { path: "", component: ResumeComponent },
+  { path: "resume", component: ResumeComponent },
+  { path: "Resume", component: ResumeComponent }
 ];
 
 
@@ -20,7 +24,9 @@ const appRoutes: Routes = [
     HeaderComponent,
     BodyComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ResumeComponent,
+    ProductPageComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

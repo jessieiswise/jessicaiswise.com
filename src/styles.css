@@ -55,15 +55,7 @@ body {
  * Footer Styles
  */
 
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
+
 
 .sans-serif {
   font-family: -apple-system, BlinkMacSystemFont,
@@ -97,3 +89,4 @@ app-root *{
                'segoe ui', arial,
                sans-serif;
 }
+
