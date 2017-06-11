@@ -86,21 +86,14 @@ body {
 .calisto { font-family: "Calisto MT", serif; }
 .garamond { font-family: garamond, serif; }
 .baskerville { font-family: baskerville, serif; }
-body{
-  background-image: url('http://i.imgur.com/nqtxo12.png');
-  background-color: #cccccc;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
-}
 
-.layer {
-    background-color: #5e2ca5;
-    opacity: 0.4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10
+
+app-root *{
+ font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
 }

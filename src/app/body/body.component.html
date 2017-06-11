@@ -1,8 +1,7 @@
-<article class="cf">
-  <div class="fl w-100 w-50-ns bg-near-white tc">
-    <h1>Column One</h1>
+<div class="cf w-100  f6 ph3 ">
+  <div class="fl w-100 w-50-m w-25-l bg-black-10 tc pv2" *ngFor="let topic of this.topics ">
+    <div class="pa3 bg-black mb3 white grow pointer">
+      <span class='f3'>{{topic}}</span>
+    </div>
   </div>
-  <div class="fl w-100 w-50-ns bg-light-gray tc">
-    <h1>Column Two</h1>
-  </div>
-</article>
+</div>

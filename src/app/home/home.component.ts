@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  public topics: any[];
+  constructor() { 
+    this.topics = [
+      "Angular",
+      "Resume",
+      "Twitter Feed",
+      "Example Proudct Page"
+    ]
+  }
 
   ngOnInit() {
+    console.log(this.topics)
   }
 
 }

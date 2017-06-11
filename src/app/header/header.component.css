@@ -4,12 +4,10 @@
     opacity: 1;
 }
 
-.header-mask{
-    opacity: 0.5
-}
-
 .name *{
     opacity: 1;
-    color:#fff;
 }
 
+.header{
+    display:flex
+}
