@@ -1,0 +1,17 @@
+.cover {
+    background-size: cover !important;
+}
+
+.bg-center {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.br2 {
+    border-radius: .25rem;
+}
+
+footer{
+    bottom:0;
+    position:absolute;
+}

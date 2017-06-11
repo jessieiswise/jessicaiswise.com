@@ -1,0 +1,15 @@
+.img-circle {
+    border-radius: 50%;
+    z-index: -2;
+    opacity: 1;
+}
+
+.header-mask{
+    opacity: 0.5
+}
+
+.name *{
+    opacity: 1;
+    color:#fff;
+}
+
