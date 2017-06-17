@@ -9,10 +9,8 @@ export class HomeComponent implements OnInit {
   public topics: any[];
   constructor() { 
     this.topics = [
-      "Angular",
-      "Resume",
-      "Twitter Feed",
-      "Example Proudct Page"
+      "Demo",
+      "Resume"
     ]
   }
 
