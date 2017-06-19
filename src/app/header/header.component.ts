@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router' 
 
 @Component({
   selector: 'app-header',
@@ -7,11 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input() topics: any;
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
   }
   registerClick(dat){
     console.log(dat)
+    this.router.navigate(dat)
   }
 }

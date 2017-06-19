@@ -1,7 +1,7 @@
 <header class="header">
 
   <div class=" w-100">
-    <div class='bg-black  tc pt1 pa4-ns pa3  flex '>
+    <div class='bg-navy  tc pt1 pa4-ns pa3  flex '>
       <div class='f1 pl2-ns tl-ns fl b lh-title  w-100 w-50-m w-50-l'>
         <div class='f2-ns f4 white '>Jessica Wise</div>
       </div>
@@ -15,8 +15,8 @@
       </div>
     </div>
     <div class='cf w-100  f6  ' >
-      <div (click)="registerClick(topic)" class="fl w-100 white pointer bg-dark-gray dim w-50-m w-50-l bg-black-10 tc pv2" *ngFor="let topic of this.topics ">
-        <span class='f3'><a class='link  underline-hover white hover-white' routerLink="/{{topic}}">{{topic}}</a></span>
+      <div  routerLink="/{{topic.route}}" class="fl w-100 white pointer bg-dark-blue dim w-50-m w-50-l bg-black-10 tc pv2" *ngFor="let topic of this.topics ">
+        <span class='f3'><a class='link  underline-hover white hover-white'>{{topic.title}}</a></span>
       </div>
     </div>
   </div>

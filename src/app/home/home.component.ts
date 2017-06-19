@@ -9,8 +9,8 @@ export class HomeComponent implements OnInit {
   public topics: any[];
   constructor() { 
     this.topics = [
-      "Demo",
-      "Resume"
+      {"title" : "Demo", "route": "datademo"},
+      {"title" : "Resume", "route": "resume"}
     ]
   }
 

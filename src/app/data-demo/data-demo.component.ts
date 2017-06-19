@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { UtilsService } from "../utils.service"
 /// <reference path="typings/tsd.d.ts" />
 
 'use strict';
@@ -10,15 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataDemoComponent implements OnInit {
   title: string = 'My first AGM project';
-  lat: number = 37.678418;
+  lat: number = 37.744;
   lng: number = -122.4194;
-  gapi: any
-  constructor() {  }
-  clickEvent(){
+  url: string = "http://maps.google.com/mapfiles/kml/shapes/parks.png"
+  trees: any
+  constructor(private utilsService: UtilsService) { }
+  clickEvent() {
   }
   ngOnInit() {
-    console.log(this.gapi)
-  
+    this.loadMapData()
+
   }
+  loadMapData() {
+    this.trees = this.utilsService.makeGetRequest("https://data.sfgov.org/resource/2zah-tuvt.json")
+      
+  }
+  private convertStringToNumber(value: string): number {
+        return +value;
+    }
 
 }

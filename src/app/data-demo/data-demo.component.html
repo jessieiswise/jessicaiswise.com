@@ -1,3 +1,11 @@
-<agm-map (click)="clickEvent()" [latitude]="lat" [longitude]="lng" [zoom]="12">
-  <agm-marker [latitude]="lat" [longitude]="lng" ></agm-marker>
-</agm-map>
+<div class='  w-100 h-100'> 
+  <div class=' fl w-20'>
+
+  </div>
+
+  <div class=' fr w-80 h-100'>
+    <agm-map (click)="clickEvent()" [latitude]="lat" [longitude]="lng" [zoom]="13">
+      <agm-marker *ngFor="let tree of trees | async" [latitude]="convertStringToNumber(tree.latitude)" [longitude]="convertStringToNumber(tree.longitude)" [iconUrl]="url"></agm-marker>
+    </agm-map>
+  </div>
+<div>

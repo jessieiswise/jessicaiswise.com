@@ -11,12 +11,13 @@ import { ResumeComponent } from './resume/resume.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { DataDemoComponent } from './data-demo/data-demo.component';
 import { AgmCoreModule } from '@agm/core';
+import { HttpModule, JsonpModule } from '@angular/http';
+import { UtilsService } from "./utils.service"
 
 const appRoutes: Routes = [
   { path: "", component: ResumeComponent },
   { path: "resume", component: ResumeComponent },
-  { path: "Resume", component: ResumeComponent },
-  { path: "Demo", component: DataDemoComponent}
+  { path: "datademo", component: DataDemoComponent }
 ];
 
 
@@ -35,11 +36,12 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    HttpModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBJMh6PwvXJgQfbY00t0NpjZ6VOGmgmZq0'
     })
   ],
-  providers: [],
+  providers: [UtilsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
