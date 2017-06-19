@@ -1,11 +1,11 @@
 <div class='  w-100 h-100'> 
-  <div class=' fl w-20'>
-
+  <div class=' fl w-30'>
+    <data-filter [mapKeys]="keys"></data-filter>
   </div>
 
-  <div class=' fr w-80 h-100'>
+  <div class=' fr w-70 h-100'>
     <agm-map (click)="clickEvent()" [latitude]="lat" [longitude]="lng" [zoom]="13">
-      <agm-marker *ngFor="let tree of trees | async" [latitude]="convertStringToNumber(tree.latitude)" [longitude]="convertStringToNumber(tree.longitude)" [iconUrl]="url"></agm-marker>
+      <agm-marker *ngFor="let tree of trees " [latitude]="convertStringToNumber(tree.latitude)" [longitude]="convertStringToNumber(tree.longitude)" [iconUrl]="url"></agm-marker>
     </agm-map>
   </div>
 <div>

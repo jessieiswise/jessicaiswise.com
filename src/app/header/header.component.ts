@@ -13,7 +13,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
   registerClick(dat){
-    console.log(dat)
     this.router.navigate(dat)
   }
 }

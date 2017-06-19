@@ -12,7 +12,8 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { DataDemoComponent } from './data-demo/data-demo.component';
 import { AgmCoreModule } from '@agm/core';
 import { HttpModule, JsonpModule } from '@angular/http';
-import { UtilsService } from "./utils.service"
+import { UtilsService } from "./utils.service";
+import { DataFilterComponent } from './data-demo/data-filter/data-filter.component'
 
 const appRoutes: Routes = [
   { path: "", component: ResumeComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     HomeComponent,
     ResumeComponent,
     ProductPageComponent,
-    DataDemoComponent
+    DataDemoComponent,
+    DataFilterComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

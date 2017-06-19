@@ -16,6 +16,16 @@
     firebase.initializeApp(config);
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://npmcdn.com/headroom.js@0.9.3/dist/headroom.min.js"></script>
+  <script>
+    // grab an element
+    var myElement = document.querySelector("header");
+    // construct an instance of Headroom, passing the element
+    var headroom = new Headroom(myElement);
+    // initialise
+    console.log('test')
+    headroom.init();
+  </script>
   <meta charset="utf-8">
   <title>Jessicaiswise.Com</title>
   <base href="/">
