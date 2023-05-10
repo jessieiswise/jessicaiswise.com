@@ -1,0 +1,25 @@
+# Node.js dependencies
+node_modules
+
+# Webpack build output
+dist
+
+# IDE files
+.idea
+.vscode
+
+# Log files
+npm-debug.log
+yarn-error.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# TypeScript build output
+*.js
+*.d.ts
+*.js.map
+
+# Environment variables
+.env
