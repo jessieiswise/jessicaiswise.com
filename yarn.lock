@@ -165,6 +165,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@simplr-wc/router@^7.0.0-rc19":
+  version "7.0.0-rc19"
+  resolved "https://registry.yarnpkg.com/@simplr-wc/router/-/router-7.0.0-rc19.tgz#b8e8612ac8fd75a34c1489ae06c6d6be3f2d939b"
+  integrity sha512-1U4nn/9ix670mBrBuA5YC0YcPsWnSgY/9VotAtd7uZZnJpt1b/b6e8QK6Gs5ykUuKo3QxPIEYczjna5fJoLoQw==
+
 "@socket.io/component-emitter@~3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz#96116f2a912e0c02817345b3c10751069920d553"
@@ -2065,7 +2070,7 @@ lit-html@^2.7.0:
   dependencies:
     "@types/trusted-types" "^2.0.2"
 
-lit@^2.7.4:
+lit@^2.3.4:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/lit/-/lit-2.7.4.tgz#ca63d27fda178dbffae0faf2c882b9910e40842c"
   integrity sha512-cgD7xrZoYr21mbrkZIuIrj98YTMw/snJPg52deWVV4A8icLyNHI3bF70xsJeAgwTuiq5Kkd+ZR8gybSJDCPB7g==
@@ -2936,6 +2941,11 @@ signal-exit@^3.0.3:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
+
+simple-wc-router@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/simple-wc-router/-/simple-wc-router-2.3.4.tgz#11ca19a45b4d6153d79a6d1372ebf28029c3ee78"
+  integrity sha512-ikDcJSIacw71fmgapRGapy73JkAFmNn3jYbMZe5Y3N4rvgNuMZzfZiJFs21V8rSsdHnQmrmd2SiGhFSJmpk/hA==
 
 socket.io-adapter@~2.5.2:
   version "2.5.2"

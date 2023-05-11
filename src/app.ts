@@ -1,20 +1,28 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import './components/header.ts';
+import { SimplrRouter } from "@simplr-wc/router";
 
 @customElement('my-app')
 export class App extends LitElement {
-    static styles = css` 
-        body {
-          margin: 0;
-        }
-    `
+
+    private router = new Router();
+
+    connectedCallback() {
+        super.connectedCallback();
+        this.router.setConfig({
+            root: this.shadowRoot!,
+            routes: {
+                '/': () => html`<h1>Home</h1>`,
+                '*': () => html`<h1>Not Found</h1>`
+            },
+            mode: 'history'
+        });
+    }
+
     render() {
         return html`
-      <my-header></my-header>
-      <main>
-        <!-- Rest of your app goes here -->
-      </main>
-    `;
+            <my-header></my-header>
+            <main id="outlet"></main>
+        `;
     }
 }
